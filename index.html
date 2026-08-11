@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王晨钊 - AI 应用开发工程师</title>
+    <meta name="description" content="王晨钊的个人简历网站。AI应用开发工程师，熟悉机器学习经典算法，具备从数据采集到部署落地的完整AI项目实践经验。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 银河星空背景 -->
+    <canvas id="galaxy-canvas"></canvas>
+
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">WCZ.</a>
+            <ul class="nav-links">
+                <li><a href="#hero">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#skills">专业技能</a></li>
+                <li><a href="#experience">实习与项目</a></li>
+                <li><a href="#education">教育背景</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 首屏：全屏粒子标题 -->
+        <section id="hero" class="section hero-particle-section animate-on-scroll">
+            <h1 class="hero-title sr-only">你好，我是 <span>王晨钊</span></h1>
+            <canvas id="text-particle-canvas"></canvas>
+        </section>
+
+        <!-- 第二屏：关于我 -->
+        <section id="about" class="section hero animate-on-scroll">
+            <div class="hero-content">
+                <h2 class="hero-subtitle">AI 应用开发工程师 / 算法工程师</h2>
+                <p class="hero-desc">
+                    一名对人工智能技术充满热情的开发者，具备从数据采集、特征工程、模型训练到部署落地的完整 AI 项目实践经验。善于用算法思维解决实际问题，期待在 AI 应用开发方向持续深耕。
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">联系我</a>
+                    <a href="#experience" class="btn btn-secondary">查看项目</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="circle-shape"></div>
+            </div>
+        </section>
+
+        <!-- 技能槽 -->
+        <section id="skills" class="section skills animate-on-scroll">
+            <div class="section-header">
+                <h2 class="section-title">专业技能</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-accordion">
+                <!-- Row 1 -->
+                <div class="accordion-row">
+                    <h3 class="row-title">核心算法与模型</h3>
+                    <div class="row-marquee">
+                        <div class="marquee-content">
+                            <span class="marquee-tag">机器学习基础</span>
+                            <span class="marquee-tag">协同过滤</span>
+                            <span class="marquee-tag">TF-IDF</span>
+                            <span class="marquee-tag">K-Means 聚类</span>
+                            <span class="marquee-tag">NLP 情感分析</span>
+                        </div>
+                        <!-- Duplicate for infinite scroll -->
+                        <div class="marquee-content">
+                            <span class="marquee-tag">机器学习基础</span>
+                            <span class="marquee-tag">协同过滤</span>
+                            <span class="marquee-tag">TF-IDF</span>
+                            <span class="marquee-tag">K-Means 聚类</span>
+                            <span class="marquee-tag">NLP 情感分析</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="accordion-row">
+                    <h3 class="row-title">开发语言与框架</h3>
+                    <div class="row-marquee">
+                        <div class="marquee-content">
+                            <span class="marquee-tag">Python</span>
+                            <span class="marquee-tag">Scikit-learn</span>
+                            <span class="marquee-tag">Pandas</span>
+                            <span class="marquee-tag">Flask</span>
+                            <span class="marquee-tag">JavaScript</span>
+                            <span class="marquee-tag">微信小程序云开发</span>
+                        </div>
+                        <div class="marquee-content">
+                            <span class="marquee-tag">Python</span>
+                            <span class="marquee-tag">Scikit-learn</span>
+                            <span class="marquee-tag">Pandas</span>
+                            <span class="marquee-tag">Flask</span>
+                            <span class="marquee-tag">JavaScript</span>
+                            <span class="marquee-tag">微信小程序云开发</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 3 -->
+                <div class="accordion-row">
+                    <h3 class="row-title">工具与工程化</h3>
+                    <div class="row-marquee">
+                        <div class="marquee-content">
+                            <span class="marquee-tag">爬虫 (Requests, BeautifulSoup)</span>
+                            <span class="marquee-tag">GitHub Actions</span>
+                            <span class="marquee-tag">Matplotlib</span>
+                            <span class="marquee-tag">微信支付 API</span>
+                        </div>
+                        <div class="marquee-content">
+                            <span class="marquee-tag">爬虫 (Requests, BeautifulSoup)</span>
+                            <span class="marquee-tag">GitHub Actions</span>
+                            <span class="marquee-tag">Matplotlib</span>
+                            <span class="marquee-tag">微信支付 API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目经历 -->
+        <section id="experience" class="section experience animate-on-scroll">
+            <div class="section-header">
+                <h2 class="section-title">实习与项目经历</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-split">
+                <!-- 左侧：3D 期权轮 -->
+                <div class="experience-wheel">
+                    <div class="wheel-item" data-index="0">Vibe Coding 简历</div>
+                    <div class="wheel-item" data-index="1">AI 漫剧动画师</div>
+                    <div class="wheel-item" data-index="2">扫码点餐系统</div>
+                    <div class="wheel-item" data-index="3">豆瓣电影 NLP 分析</div>
+                    <div class="wheel-item" data-index="4">智能天气推荐助手</div>
+                </div>
+
+                <!-- 右侧：详情卡片容器 -->
+                <div class="experience-content-container">
+                    <!-- 项目0 (New) -->
+                    <div class="experience-content glass-card" data-index="0">
+                        <span class="timeline-date">2026.07 - 至今</span>
+                        <h3 class="timeline-title">Vibe Coding 个人简历网站 (独立开发)</h3>
+                        <div class="tech-stack">HTML5 · CSS3 (Glassmorphism) · 原生 JavaScript · Canvas 粒子特效</div>
+                        <ul class="timeline-details">
+                            <li>全程采用 <strong>Vibe Coding</strong> 模式独立开发，从零到一极速构建极具现代科技感的个人专属交互式 Web 简历。</li>
+                            <li>深度运用 CSS3 变量、毛玻璃滤镜与 3D 透视转换技术，无框架纯手写实现“期权轮”、“无缝轮播手风琴”等高难度炫酷 UI 交互。</li>
+                            <li>自研基于原生 Canvas 的物理粒子系统，实现像素级文字解构生成、平滑摩擦力算法及动态鼠标视差追踪的满屏视觉盛宴。</li>
+                        </ul>
+                    </div>
+                    <!-- 项目1 -->
+                    <div class="experience-content glass-card" data-index="1">
+                        <span class="timeline-date">2026.03 - 2026.07</span>
+                        <h3 class="timeline-title">AI 漫剧动画师 / 抽卡师 (实习)</h3>
+                        <div class="tech-stack">Midjourney · Stable Diffusion · 提示词工程 (Prompt) · 视频剪辑</div>
+                        <ul class="timeline-details">
+                            <li>深入应用 Midjourney 与 Stable Diffusion 等 AI 图像生成工具，通过精调提示词 (Prompt) 高效产出高质量漫画分镜与人物插图。</li>
+                            <li>参与 AI 漫剧的角色设计与场景构建，训练与微调专属 LoRA 模型，确保不同分镜下角色形象的连贯性与一致性。</li>
+                            <li>结合后期剪辑与特效工具，将 AI 生成的静态图片转化为生动的动态漫剧，大幅提升团队的内容生产效率。</li>
+                        </ul>
+                    </div>
+                    <!-- 项目2 -->
+                    <div class="experience-content glass-card" data-index="2">
+                        <span class="timeline-date">2025.04 - 2026.02</span>
+                        <h3 class="timeline-title">微信小程序扫码点餐与排队预定系统</h3>
+                        <div class="tech-stack">Java (SSM) · 微信小程序 · MySQL · 协同过滤</div>
+                        <ul class="timeline-details">
+                            <li>独立完成后端 (基于 SSM 框架) 与前端 (微信小程序) 的全栈开发，实现扫码排队、在线点餐、座位预约等核心业务功能。</li>
+                            <li>基于用户点餐历史数据，设计协同过滤推荐算法，实现菜品的个性化推荐，有效提升用户的点餐效率。</li>
+                            <li>成功对接微信支付 API，完成订单生成、支付状态回调等闭环逻辑，保障系统订单流转安全稳定。</li>
+                        </ul>
+                    </div>
+                    <!-- 项目3 -->
+                    <div class="experience-content glass-card" data-index="3">
+                        <span class="timeline-date">2024.03 - 2024.08</span>
+                        <h3 class="timeline-title">豆瓣电影智能分析 —— 基于 NLP 的影评情感挖掘</h3>
+                        <div class="tech-stack">Python · Scikit-learn · Pandas · Jieba · SnowNLP</div>
+                        <ul class="timeline-details">
+                            <li>设计反爬策略实现豆瓣 Top250 电影元数据及影评的高效采集，累计获取 1 万+条评论数据。</li>
+                            <li>利用 TF-IDF 提取影评关键词，结合电影评分进行关联分析，挖掘影响评分的核心因素。</li>
+                            <li>将分析结果可视化，生成电影推荐报告与情感趋势图。</li>
+                            <li><strong>项目成果</strong>：构建了完整的 NLP 分析 Pipeline，为后续电影推荐系统研究提供了高质量的数据基础。</li>
+                        </ul>
+                    </div>
+                    <!-- 项目4 -->
+                    <div class="experience-content glass-card" data-index="4">
+                        <span class="timeline-date">2023.03 - 2023.08</span>
+                        <h3 class="timeline-title">智能天气推荐助手 —— 基于用户行为的个性化推送</h3>
+                        <div class="tech-stack">Python · Scikit-learn · Flask · GitHub Actions</div>
+                        <ul class="timeline-details">
+                            <li>采集用户历史天气查询行为及互动数据，构建用户画像特征（地理位置、关注指标、活跃时段）。</li>
+                            <li>利用 K-Means 聚类算法对用户进行分群，识别高活跃用户、通勤用户、敏感天气用户等群体。</li>
+                            <li>使用 Flask 搭建简易推送服务，通过 GitHub Actions 实现每日自动化执行。</li>
+                            <li><strong>项目成果</strong>：服务稳定运行超过一年，积累了完整的用户画像构建与个性化推荐系统开发经验。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 教育背景 -->
+        <section id="education" class="section education animate-on-scroll">
+            <div class="section-header">
+                <h2 class="section-title">教育背景</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="edu-card glass-card">
+                <div class="edu-header">
+                    <h3>云南民族大学</h3>
+                    <span class="edu-date">2024.09 - 2026.06</span>
+                </div>
+                <div class="edu-major">信息管理与信息系统（本科）</div>
+                <p class="edu-desc">
+                    <strong>主修课程：</strong>计算机网络与安全、管理信息系统、电子商务与网络营销、管理学原理、机器学习、大数据技术、数据结构与数据库、Hadoop 集群搭建。
+                </p>
+
+                <!-- 环形画廊 -->
+                <div class="gallery-container">
+                    <div class="ring-gallery">
+                        <div class="gallery-item">
+                            <img src="1.jpg" alt="Gallery Image 1">
+
+                        </div>
+                        <div class="gallery-item">
+                            <img src="2.jpg" alt="Gallery Image 2">
+
+                        </div>
+                        <div class="gallery-item">
+                            <img src="3.jpg" alt="Gallery Image 3">
+
+                        </div>
+                        <div class="gallery-item">
+                            <img src="4.jpg" alt="Gallery Image 4">
+
+                        </div>
+                        <div class="gallery-item">
+                            <img src="5.jpg" alt="Gallery Image 5">
+
+                        </div>
+                        <div class="gallery-item">
+                            <img src="6.jpg" alt="Gallery Image 6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚与联系方式 -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <h2>Let's Talk</h2>
+            <p>寻找优秀的 AI 算法工程师？欢迎随时与我联系！</p>
+            <div class="contact-info">
+                <a href="mailto:wcz022****@163.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    wcz022****@163.com
+                </a>
+                <span class="contact-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    185****3752
+                </span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 王晨钊. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
